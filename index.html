@@ -32,6 +32,15 @@
       cursor: pointer;
     }
 
+    input:focus{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    input{
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
   </style>
 </head>
 <body>
@@ -40,16 +49,16 @@
 
         <form id="bookForm" class=" mt-1">
             <label for="author" class="fw-bold me-3 ">Author:</label>
-            <input type="text" class=" d-flex justify-content-centre w-100" id="author" required><br>
+            <input type="text" class="form-control" id="author" required><br>
 
             <label for="title" class="fw-bold me-4">Title:</label>
-            <input type="text" class=" d-flex justify-content-centre w-100" id="title" required><br>
+            <input type="text" class=" form-control" id="title" required><br>
 
             <label for="isbn" class="fw-bold me-4">ISBN:</label>
-            <input type="text" class=" d-flex justify-content-centre w-100"  id="isbn" required><br>
+            <input type="text" class=" form-control"  id="isbn" required><br>
 
             <label for="amount" class="fw-bold me-3">Amount:</label>
-            <input type="number" class=" d-flex justify-content-centre w-100" id="amount" required><br>
+            <input type="number" class=" form-control" id="amount" required><br>
 
             <button type="submit" class=" btn btn-secondary fw-bold me-2 mt-1  ">Submit</button>
             <button type="button" class=" btn btn-secondary fw-bold ms-3 mt-1" onclick="clearForm()">Clear</button>
